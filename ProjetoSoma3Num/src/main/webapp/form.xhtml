@@ -13,9 +13,10 @@
 <body>
 
 		<h:form>
-			<p>Digite o primeiro valor 	<h:inputText value = "#{pageBean.nome}"/></p>
-			<p>Digite o segundo valor 	<h:inputText value = "#{pageBean.nome}"/></p>
-			<p>Digite o terceiro valor 	<h:inputText value = "#{pageBean.nome}"/></p>
+			<p>Digite o primeiro valor<h:inputText value = "#{pageBean.n1}"/></p>
+			<p>Digite o segundo valor<h:inputText value = "#{pageBean.n2}"/></p>
+			<p>Digite o terceiro valor<h:inputText value = "#{pageBean.n3}"/></p>
+			<h:commandButton value = "Somar" action = "#{pageBean.processar}"/>
 		</h:form>
 	
 </body>
