@@ -37,7 +37,7 @@ public class CadastroBean implements Serializable {
 	}
 	 
 	public List<Estado> getEstados(){
-		return DataProvider.ESTADOS
+		return DataProvider.ESTADOS;
 	}
 	
 	public List<Interesse> getInteresse(){
