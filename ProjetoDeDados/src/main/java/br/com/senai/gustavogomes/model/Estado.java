@@ -23,7 +23,7 @@ public class Estado {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getSilga() {
+	public String getSigla() {
 		return sigla;
 	}
 	public void setSigla(String sigla) {

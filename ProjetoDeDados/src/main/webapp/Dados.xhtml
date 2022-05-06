@@ -50,7 +50,7 @@
 				Estado:
 				<h:selectOneMenu value="#{cadastro.pessoa.enderecoResidencial.estado.sigla}" >
 					<f:selectItem itemValue="Selecione" noSelectionOption="true" />
-					<f:selectItem value="#{cadastro.estados}" var="e" itemValue="#{e.sigla}" itemLabel="#{e.sigla} - #{e.nome}" />
+					<f:selectItems value="#{cadastro.estados}" var="e" itemValue="#{e.sigla}" itemLabel="#{e.sigla} - #{e.nome}" />
 				</h:selectOneMenu>
 				
 				Telefone residencial:

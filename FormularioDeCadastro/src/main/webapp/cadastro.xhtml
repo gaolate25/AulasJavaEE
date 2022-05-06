@@ -10,9 +10,24 @@
 	<meta http-equi="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<title>Cadastro</title>
 </h:head>
+
+		<script>
+			function verificarSenhas{
+				var senha1 = document.getElemendyByld("f:s1") value;
+				var senha2 = document.getElemendyByld("f:s2") value;
+				
+				if(senha1==senha2){
+					return true;
+				}
+				alert("Senhas são diferentes");
+				return false;
+			}
+		
+		</script>
+
 <body>
 
-		<h:form>	
+		<h:form id="f">	
 			<h:panelGrid columns="2">
 				<f:facet name="header">
 					Cadastro de Usuário
@@ -23,9 +38,9 @@
 				E-mail: 
 				<h:inputText value = "#{cadastro.email}"/>
 				Senha:
-				<h:inputText value = "#{cadastro.senha1}"/>
+				<h:inputText id ="s1" value = "#{cadastro.senha1}"/>
 				Confirmação de senha:
-				<h:inputText value = "#{cadastro.senha2}"/>
+				<h:inputText id = "s2" value = "#{cadastro.senha2}"/>
 				Sexo:
 				<h:selectOneRadio value = "#{cadastro.sexo}">
 					<f:selectItem itemValue="F" itemLabel="Feminino"/>
@@ -45,7 +60,7 @@
 				</h:selectManyCheckbox>
 				
 			</h:panelGrid>
-			<h:commandButton value = "Cadastrar" action="info" />
+			<h:commandButton value = "Cadastrar" action="info" onclick ="s1" />
 		</h:form>
 </body>
 </html>

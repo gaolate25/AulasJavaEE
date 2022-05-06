@@ -1,12 +1,15 @@
 package br.com.senai.gustavogomes.application;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
+import br.com.senai.gustavogomes.application.business.DataProvider;
 import br.com.senai.gustavogomes.model.Endereco;
 import br.com.senai.gustavogomes.model.Estado;
+import br.com.senai.gustavogomes.model.Interesse;
 import br.com.senai.gustavogomes.model.Pessoa;
 import br.com.senai.gustavogomes.model.Telefone;
 
@@ -31,5 +34,13 @@ public class CadastroBean implements Serializable {
 	}
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+	 
+	public List<Estado> getEstados(){
+		return DataProvider.ESTADOS;
+	}
+	
+	public List<Interesse> getInteresse(){
+		return DataProvider.INTERESSES;
 	}
 }

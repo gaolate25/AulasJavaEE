@@ -49,33 +49,7 @@ public class DataProvider {
 		INTERESSES.add(new Interesse(4, "Viagens"));
 		INTERESSES.add(new Interesse(5, "Cinema"));
 		INTERESSES.add(new Interesse(6, "Dança"));
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 	
 	
