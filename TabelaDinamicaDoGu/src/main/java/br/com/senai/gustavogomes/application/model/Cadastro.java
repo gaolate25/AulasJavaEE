@@ -1,6 +1,13 @@
 package br.com.senai.gustavogomes.application.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity
+
 public class Cadastro {
+	@Id
+	@GeneratedValue
 private String data;
 private String descricao;
 private Double valor;
@@ -11,12 +18,14 @@ public String getData() {
 }
 
 
+
 public Cadastro(String data, String descricao, Double valor) {
 	super();
 	this.data = data;
 	this.descricao = descricao;
 	this.valor = valor;
 }
+
 
 public Cadastro() {
 	this.data = data;
