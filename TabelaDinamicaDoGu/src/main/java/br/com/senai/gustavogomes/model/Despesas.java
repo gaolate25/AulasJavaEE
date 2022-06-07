@@ -11,12 +11,23 @@ public class Despesas {
 	@GeneratedValue
 	
 	private Integer id;
-	
 	private String data;
 	private String descricao;
-	private Double valor;
+	private Integer valor;
 	private boolean edit;
 	
+	public Despesas(String data, String descricao , Integer valor) {
+		super();
+		this.data = data;
+		this.descricao = descricao;
+		this.valor = valor;
+	}
+	
+	//colocando vazio para a entidade funcionar
+	public Despesas() {
+		
+	}
+		
 	
 	public Integer getId() {
 		return id;
@@ -39,10 +50,10 @@ public class Despesas {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public Double getValor() {
+	public Integer getValor() {
 		return valor;
 	}
-	public void setValor(Double valor) {
+	public void setValor(Integer valor) {
 		this.valor = valor;
 	}
 	public boolean isEdit() {
