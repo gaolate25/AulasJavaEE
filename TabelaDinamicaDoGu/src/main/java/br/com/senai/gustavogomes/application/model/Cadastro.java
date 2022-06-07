@@ -8,10 +8,24 @@ import javax.persistence.Id;
 public class Cadastro {
 	@Id
 	@GeneratedValue
+	
+private Integer id;
+	
 private String data;
 private String descricao;
 private Double valor;
 private Boolean edit;
+
+
+
+
+public Integer getId() {
+	return id;
+}
+
+public void setId(Integer id) {
+	this.id = id;
+}
 
 public String getData() {
 	return data;

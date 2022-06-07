@@ -6,17 +6,24 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import br.com.senai.gustavogomes.application.model.Cadastro;
 
 
-
-
 @SuppressWarnings("serial") 
+@Stateless 
 
 public class PageBean implements Serializable{
+	
+	
+	@PersistenceContext
+	private EntityManager em;
 	
 	private List<Cadastro> despesas = new ArrayList<>();
 	
@@ -68,7 +75,6 @@ public class PageBean implements Serializable{
 	}
 	
 	public String excluir(Cadastro despesa) {
-		
 		despesas.remove(despesa);
 		
 		return null;
