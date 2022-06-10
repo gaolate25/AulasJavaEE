@@ -5,7 +5,7 @@ import javax.persistence.EntityManager;
 import br.com.senai.gustavogomes.model.Despesas;
 
 public class DespesasBean {
-	private EntityManager em;
+	private EntityManager em; //entidade para LOCALIZAR E CHAMAR A FUNÇÃO
 	
 	public void inserir (Despesas despesas) {
 		em.persist(despesas);

@@ -8,14 +8,14 @@ import javax.persistence.PersistenceContext;
 
 import br.com.senai.gustavogomes.model.Despesas;
 
-@Stateless //
+@Stateless // ele disponibilizará uma funcionalidade de mudança de função, de dólar para real
 public class DespesasBean {
 
-	@PersistenceContext //
+	@PersistenceContext // persistindo no contexto
 	private EntityManager em; ///ele que gerencia o banco de dados  e tambem ele chama jpa
 	
 	public void inserir(Despesas despesas) {
-		em.persist(despesas);
+		em.persist(despesas);  // persistir em despesas
 	}
 	
 	public void atualizar(Despesas despesas) {
