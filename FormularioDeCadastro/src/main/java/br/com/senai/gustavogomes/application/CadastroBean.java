@@ -7,10 +7,11 @@ import javax.inject.Named;
 
 import br.com.senai.gustavogomes.model.Linguagem;
 
-@SuppressWarnings("serial")
-@RequestScoped
-@Named("cadastro")
-public class CadastroBean implements Serializable {
+@SuppressWarnings("serial") //ele serve para não ficar mostrando o sinal de aviso  no sistema
+@RequestScoped  // ele é como se fosse uma vida curta ele vai em só uma submição e depois se encerra 
+@Named("cadastro") // esta definindo o nome 
+
+public class CadastroBean implements Serializable {  //esta implementando a variavel no serializable
 	private String nome;
 	private String email;
 	private String senha1;
@@ -21,22 +22,22 @@ public class CadastroBean implements Serializable {
 	private Integer[] linguagens;
 	
 	
-	public Linguagem[] getListaLinguagens() {
+	public Linguagem[] getListaLinguagens() {  // recebendo informações da lista de LINGUAGENS  
 		return Linguagem.LINGUAGENS;
 	}
 	
 	
 	
-	public String getNome() {
-		return nome;
+	public String getNome() { // recebendo nome 
+		return nome;  // dando um retorno
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String nome) {  // inserindo o nome 
+		this.nome = nome;  //isto recebe nome = nome 
 	}
-	public String getEmail() {
+	public String getEmail() { // recebendo email
 		return email;
 	}
-	public void setEmail(String email) {
+	public void setEmail(String email) {  //inserindo o email 
 		this.email = email;
 	}
 	public String getSenha1() {
@@ -80,8 +81,8 @@ public class CadastroBean implements Serializable {
 		String str="";
 		boolean first = true;
 		for(Integer linguagem : linguagens) {
-			if(!first) {
-				str += ",";
+			if(!first) {  // primeiro
+				str += ","; // ele vai definir um valor 
 			}
 			str += Linguagem.LINGUAGENS[linguagem].getNome();
 			first = false;

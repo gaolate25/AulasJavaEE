@@ -12,7 +12,7 @@ public class PageBean implements Serializable {
 
 	private String page;
 	
-	public enum Pages{
+	public enum Pages{ // enumerarando  paginas 
 		page_a,page_b;
 	}
 
@@ -24,7 +24,7 @@ public class PageBean implements Serializable {
 		this.page = page;
 	}
 	
-	public Pages goTo() {
+	public Pages goTo() { // vai para paginas 
 		
 		if("a".equals(page)) {
 			return Pages.page_a;

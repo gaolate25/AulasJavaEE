@@ -17,7 +17,7 @@ public class PageBean implements Serializable {
 	private Flash flash;
 	
 	public String processar() {
-		flash.put("nomeDoUsuario",nome);
+		flash.put("nomeDoUsuario",nome); // colocando o flash 
 		return "result?-faces-redirect=true";
 	}
 	

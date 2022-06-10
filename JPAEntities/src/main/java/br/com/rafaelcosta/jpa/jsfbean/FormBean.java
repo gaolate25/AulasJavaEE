@@ -19,10 +19,10 @@ import br.com.rafaelcosta.jpa.model.Tarefa;
 
 public class FormBean implements Serializable {
 	
-	@EJB  
+	@EJB  //um componente server-side que encapsula a lógica de negócio de uma aplicação
 	private TarefaBean tarefaBean;
 
-	@Inject
+	@Inject //injetando informações
 	private FacesContext context;   //fazem parte do ejb
 	
 	private UIComponent searchInputText;  //tambem faz parte do ejb
@@ -39,7 +39,7 @@ public class FormBean implements Serializable {
 		}		
 	}
 	
-	public void pesquisar(AjaxBehaviorEvent event) { 
+	public void pesquisar(AjaxBehaviorEvent event) {  //comando de conexão ao banco de dados , e de uma biblioteca que sendo chamada
 		tarefa = tarefaBean.carregar(tarefaId);
 		
 		if(tarefa == null) {
@@ -60,11 +60,11 @@ public class FormBean implements Serializable {
 		return tarefa;
 	}
 
-	public UIComponent getSearchInputText() {
+	public UIComponent getSearchInputText() { // recebendo textos do inputText , uicomponent vem de um biblioteca  carregada e executada em qualquer processo em execução.
 		return searchInputText;
 	}
 
-	public void setSearchInputText(UIComponent searchInputText) {
+	public void setSearchInputText(UIComponent searchInputText) { // colocando textos
 		this.searchInputText = searchInputText;
 	}
 

@@ -13,11 +13,11 @@ import br.com.senai.gustavogomes.model.Despesas;
 
 @SuppressWarnings("serial")
 @Named("tabela")
-@SessionScoped
+@SessionScoped // sessão com uma classe de entidadede do jsf 
 public class TabelaBean implements Serializable {
 	
-	private List<Despesas> despesasList = new ArrayList<>();
-	private ListDataModel<Despesas> despesas = new ListDataModel<>(despesasList);
+	private List<Despesas> despesasList = new ArrayList<>(); // criando uma nova lista  com o Arraylist
+	private ListDataModel<Despesas> despesas = new ListDataModel<>(despesasList); // colocando informaçoes na tabela e com o data model = modelo de datas 
 	
 	public String inserir() {           //criando novo objeto e colocando na lista 
 		Despesas d = new Despesas();

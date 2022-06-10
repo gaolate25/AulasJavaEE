@@ -7,13 +7,13 @@ public class Linguagem {
 	public static final Linguagem[] LINGUAGENS;
 		
 	static {
-		LINGUAGENS = new Linguagem[5];
+		LINGUAGENS = new Linguagem[5];  // colocando informações em novas linguagens e de 0 a 4  
 		
-		LINGUAGENS[0] = new Linguagem(1, "Java");
-		LINGUAGENS[1] = new Linguagem(2, "IOS");
-		LINGUAGENS[2] = new Linguagem(3, "C++");
-		LINGUAGENS[3] = new Linguagem(4, "C#");
-		LINGUAGENS[4] = new Linguagem(5, "PHP");
+		LINGUAGENS[0] = new Linguagem(1, "Java"); // informaçoes 
+		LINGUAGENS[1] = new Linguagem(2, "IOS");  // informaçoes 
+		LINGUAGENS[2] = new Linguagem(3, "C++"); // informaçoes 
+		LINGUAGENS[3] = new Linguagem(4, "C#"); // informaçoes 
+		LINGUAGENS[4] = new Linguagem(5, "PHP"); // informaçoes 
 		
 		
 	}

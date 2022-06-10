@@ -9,14 +9,14 @@ import br.com.senai.gustavogomes.model.Interesse;
 public class DataProvider {
 
 	
-	public static final List<Estado> ESTADOS;
+	public static final List<Estado> ESTADOS; // colocar informações na lista de Estados 
 	public static final List<Interesse> INTERESSES;
 	
 	static {
-		ESTADOS = new ArrayList<>();
+		ESTADOS = new ArrayList<>(); // criando nova lista  
 		ESTADOS.add(new Estado("Acre","AC"));
 		ESTADOS.add(new Estado("Alagoas","AL"));
-		ESTADOS.add(new Estado("Amazonas","AM"));
+		ESTADOS.add(new Estado("Amazonas","AM"));  // colocando informações 
 		ESTADOS.add(new Estado("Manaus","AP"));
 		ESTADOS.add(new Estado("Bahia","BA"));
 		ESTADOS.add(new Estado("Ceará","CE"));
@@ -42,12 +42,12 @@ public class DataProvider {
 		ESTADOS.add(new Estado("São Paulo","SP"));
 		ESTADOS.add(new Estado("Tocantins","TO"));
 		
-		INTERESSES = new ArrayList<>();
+		INTERESSES = new ArrayList<>();  // Criando nova lista de Interesses 
 		INTERESSES.add(new Interesse(1, "Esporte"));
 		INTERESSES.add(new Interesse(2, "Música"));
 		INTERESSES.add(new Interesse(3, "Artes Marciais"));
 		INTERESSES.add(new Interesse(4, "Viagens"));
-		INTERESSES.add(new Interesse(5, "Cinema"));
+		INTERESSES.add(new Interesse(5, "Cinema"));    // informações 
 		INTERESSES.add(new Interesse(6, "Dança"));
 			
 	}

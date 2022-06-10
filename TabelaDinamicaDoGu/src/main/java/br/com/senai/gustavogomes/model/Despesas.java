@@ -5,10 +5,10 @@ import java.sql.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-@Entity
+@Entity // entidade para o banco de dados 
 public class Despesas {
-	@Id
-	@GeneratedValue
+	@Id 
+	@GeneratedValue //arregada e em qualquer processo em execução de funcionamneto
 	
 	private Integer id;
 	private String data;

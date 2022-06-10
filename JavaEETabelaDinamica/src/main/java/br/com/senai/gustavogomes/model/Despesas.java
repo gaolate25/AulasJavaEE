@@ -1,6 +1,6 @@
 package br.com.senai.gustavogomes.model;
 
-import java.sql.Date;
+import java.sql.Date; // tipo de data do sql para conseguri colocar as datas // 
 
 public class Despesas {
 	

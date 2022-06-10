@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity ///ele fala que é uma entidade que vai ser gravada no banco de dados
 public class Tarefa {
 
-	@Id
+	@Id  // ele serve como id de entidade para localizar alguma informação
 	@GeneratedValue // ele faz geração automatica 
 	private Integer id;  //integer serve para não receber null
 	
