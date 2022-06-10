@@ -18,7 +18,6 @@ import br.com.senai.gustavogomes.model.Despesas;
 
 @Named("form")   //criando o nome
 @RequestScoped   //tempo de vida requisição , quando termina apaga o objeto
-
 public class FormBean implements Serializable {
 	
 	@EJB  

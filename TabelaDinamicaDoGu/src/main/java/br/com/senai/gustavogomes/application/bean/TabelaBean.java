@@ -25,6 +25,7 @@ public class TabelaBean implements Serializable{
 	private DespesasBean despesaBean;
 	private Integer despesaId;
 	private Despesas despesa;
+	
 	String data1;
 	String desc1;
 	Integer Valor1;

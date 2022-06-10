@@ -20,7 +20,6 @@ import br.com.senai.gustavogomes.model.Despesas;
 
 @SuppressWarnings("serial") 
 @Stateless 
-
 public class PageBean implements Serializable{
 	
 	
